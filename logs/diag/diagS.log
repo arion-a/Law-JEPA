@@ -1,0 +1,8 @@
+0_g20auxS s {'logT': 0.792, 'logP': 0.896}
+0_g20auxS mean {'logT': 0.822, 'logP': 0.916}
+0_g20auxS flat {'logT': 0.827, 'logP': 0.918}
+0_g20auxS diff {'logT': 0.771, 'logP': 0.878}
+0_g20S s {'logT': 0.298, 'logP': 0.661}
+0_g20S mean {'logT': 0.274, 'logP': 0.657}
+0_g20S flat {'logT': 0.316, 'logP': 0.677}
+0_g20S diff {'logT': 0.771, 'logP': 0.878}
