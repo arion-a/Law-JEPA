@@ -1,4 +1,4 @@
-# Gas-law HJEPA: do T and P emerge in a JEPA's top-level state?
+# Ideal Gas-law HJEPA: do T and P emerge in a JEPA's top-level state?
 
 Hierarchical JEPA trained on a simulated 2D gas; a linear probe asks whether the 8-number top-level state encodes log T and log P.
 **v3 result (4-frame clips, 3 seeds): SUPPORTED** — see `docs/RESULTS_v3.md`.
