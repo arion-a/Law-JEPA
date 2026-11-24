@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="Segoe UI,Helvetica,Arial,sans-serif">
+<rect width="900" height="470" rx="14" fill="#0f172a"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker></defs>
+<text x="450" y="32" fill="#f1f5f9" font-size="20" font-weight="700" text-anchor="middle">Can temperature and pressure be read from a JEPA's 8 top-level numbers?</text>
+<rect x="20" y="56" width="185" height="82" rx="10" fill="#1e293b" stroke="#38bdf8"/>
+<text x="112.5" y="82" fill="#38bdf8" font-size="14" font-weight="700" text-anchor="middle">Simulated 2D gas</text>
+<text x="112.5" y="104" fill="#cbd5e1" font-size="13" text-anchor="middle">4 video frames,</text>
+<text x="112.5" y="122" fill="#cbd5e1" font-size="13" text-anchor="middle">20 substeps apart</text>
+<rect x="245" y="56" width="185" height="82" rx="10" fill="#1e293b" stroke="#a78bfa"/>
+<text x="337.5" y="82" fill="#a78bfa" font-size="14" font-weight="700" text-anchor="middle">Hierarchical JEPA</text>
+<text x="337.5" y="104" fill="#cbd5e1" font-size="13" text-anchor="middle">trained with no labels</text>
+<text x="337.5" y="122" fill="#cbd5e1" font-size="13" text-anchor="middle">(no T or P given)</text>
+<rect x="470" y="56" width="185" height="82" rx="10" fill="#1e293b" stroke="#34d399"/>
+<text x="562.5" y="82" fill="#34d399" font-size="14" font-weight="700" text-anchor="middle">Top-level state s</text>
+<text x="562.5" y="104" fill="#cbd5e1" font-size="13" text-anchor="middle">8 numbers</text>
+<rect x="695" y="56" width="185" height="82" rx="10" fill="#1e293b" stroke="#fbbf24"/>
+<text x="787.5" y="82" fill="#fbbf24" font-size="14" font-weight="700" text-anchor="middle">Linear probe</text>
+<text x="787.5" y="104" fill="#cbd5e1" font-size="13" text-anchor="middle">reads log T and log P</text>
+<text x="787.5" y="122" fill="#cbd5e1" font-size="13" text-anchor="middle">from s</text>
+<path d="M207 97 H243" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)" fill="none"/>
+<path d="M432 97 H468" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)" fill="none"/>
+<path d="M657 97 H693" stroke="#94a3b8" stroke-width="2" marker-end="url(#a)" fill="none"/>
+<text x="450" y="172" fill="#e2e8f0" font-size="14" font-weight="700" text-anchor="middle">Result of the final design (v3): test R² of the probe, each dot is one seed</text>
+<line x1="378.2" x2="378.2" y1="190" y2="405" stroke="#1e293b"/>
+<text x="378.2" y="423" fill="#94a3b8" font-size="12" text-anchor="middle">0</text>
+<line x1="498.6" x2="498.6" y1="190" y2="405" stroke="#1e293b"/>
+<text x="498.6" y="423" fill="#94a3b8" font-size="12" text-anchor="middle">0.25</text>
+<line x1="619.1" x2="619.1" y1="190" y2="405" stroke="#1e293b"/>
+<text x="619.1" y="423" fill="#94a3b8" font-size="12" text-anchor="middle">0.5</text>
+<line x1="739.5" x2="739.5" y1="190" y2="405" stroke="#1e293b"/>
+<text x="739.5" y="423" fill="#94a3b8" font-size="12" text-anchor="middle">0.75</text>
+<line x1="860.0" x2="860.0" y1="190" y2="405" stroke="#1e293b"/>
+<text x="860.0" y="423" fill="#94a3b8" font-size="12" text-anchor="middle">1</text>
+<line x1="811.8" x2="811.8" y1="190" y2="405" stroke="#34d399" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="811.8" y="186" fill="#34d399" font-size="12" text-anchor="middle">threshold 0.90</text>
+<text x="20" y="214" fill="#f1f5f9" font-size="14" font-weight="700">log T</text>
+<text x="318" y="216" fill="#cbd5e1" font-size="13" text-anchor="end">Trained model</text>
+<line x1="330" x2="860" y1="212" y2="212" stroke="#334155"/>
+<circle cx="825.8" cy="212" r="6" fill="#a78bfa"/>
+<circle cx="832.5" cy="212" r="6" fill="#a78bfa"/>
+<circle cx="833.0" cy="212" r="6" fill="#a78bfa"/>
+<text x="866" y="216" fill="#94a3b8" font-size="11" text-anchor="start"></text>
+<text x="318" y="243" fill="#cbd5e1" font-size="13" text-anchor="end">Untrained model</text>
+<line x1="330" x2="860" y1="239" y2="239" stroke="#334155"/>
+<circle cx="375.8" cy="239" r="6" fill="#64748b"/>
+<circle cx="374.3" cy="239" r="6" fill="#64748b"/>
+<circle cx="378.7" cy="239" r="6" fill="#64748b"/>
+<text x="866" y="243" fill="#94a3b8" font-size="11" text-anchor="start"></text>
+<text x="318" y="270" fill="#cbd5e1" font-size="13" text-anchor="end">Raw pixels</text>
+<line x1="330" x2="860" y1="266" y2="266" stroke="#334155"/>
+<circle cx="368.1" cy="266" r="6" fill="#fb923c"/>
+<text x="866" y="270" fill="#94a3b8" font-size="11" text-anchor="start"></text>
+<text x="20" y="307" fill="#f1f5f9" font-size="14" font-weight="700">log P</text>
+<text x="318" y="309" fill="#cbd5e1" font-size="13" text-anchor="end">Trained model</text>
+<line x1="330" x2="860" y1="305" y2="305" stroke="#334155"/>
+<circle cx="843.6" cy="305" r="6" fill="#a78bfa"/>
+<circle cx="846.5" cy="305" r="6" fill="#a78bfa"/>
+<circle cx="847.0" cy="305" r="6" fill="#a78bfa"/>
+<text x="866" y="309" fill="#94a3b8" font-size="11" text-anchor="start"></text>
+<text x="318" y="336" fill="#cbd5e1" font-size="13" text-anchor="end">Untrained model</text>
+<line x1="330" x2="860" y1="332" y2="332" stroke="#334155"/>
+<circle cx="403.2" cy="332" r="6" fill="#64748b"/>
+<circle cx="412.9" cy="332" r="6" fill="#64748b"/>
+<circle cx="423.5" cy="332" r="6" fill="#64748b"/>
+<text x="866" y="336" fill="#94a3b8" font-size="11" text-anchor="start"></text>
+<text x="318" y="363" fill="#cbd5e1" font-size="13" text-anchor="end">Raw pixels</text>
+<line x1="330" x2="860" y1="359" y2="359" stroke="#334155"/>
+<circle cx="610.9" cy="359" r="6" fill="#fb923c"/>
+<text x="866" y="363" fill="#94a3b8" font-size="11" text-anchor="start"></text>
+<text x="450" y="447" fill="#cbd5e1" font-size="13" text-anchor="middle">Rule fixed in advance: trained R² ≥ 0.90 for both, controls at least 0.30 lower, in all 3 seeds. Verdict: SUPPORTED.</text>
+<text x="450" y="465" fill="#94a3b8" font-size="12" text-anchor="middle">Source: docs/RESULTS_v3.md. Earlier designs v1 and v2 did not meet the rule (see README).</text>
+</svg>
